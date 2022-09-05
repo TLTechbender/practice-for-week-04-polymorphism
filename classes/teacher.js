@@ -6,7 +6,10 @@ class Teacher extends Person {
     this.subject = subject;
     this.yearsOfExperience = yearsOfExperience;
   }
+    introduce(){
 
+        return `Hello. I am ${this.firstName} ${this.lastName} and Ihve been teaching ${this.subject} for ${this.yearsOfExperience}`
+    }
   static combinedYearsOfExperience(teachers) {
     let count = 0;
     for (const teacher of teachers) {
